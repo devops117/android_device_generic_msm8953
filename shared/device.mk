@@ -184,7 +184,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
-    android.hardware.health@2.1-impl-sdm845
+    android.hardware.health@2.1-impl
 
 
 # mkbootimg host tool to build boot.img separately
@@ -221,5 +221,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
 
 PRODUCT_SOONG_NAMESPACES += \
-    device/generic/sdm845 \
+    device/generic/msm8953 \
     external/mesa3d
