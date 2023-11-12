@@ -1,7 +1,7 @@
-ifneq ($(filter axolotl beryllium enchilada, $(TARGET_DEVICE)),)
+ifneq ($(filter mido, $(TARGET_DEVICE)),)
 
-IMAGE_GZ := device/generic/sdm845/shared/prebuilt-kernel/android-$(TARGET_KERNEL_USE)/Image.gz
-DTB := $(wildcard device/generic/sdm845/shared/prebuilt-kernel/android-$(TARGET_KERNEL_USE)/*.dtb)
+IMAGE_GZ := device/generic/msm8953/shared/prebuilt-kernel/android-$(TARGET_KERNEL_USE)/Image.gz
+DTB := $(wildcard device/generic/msm8953/shared/prebuilt-kernel/android-$(TARGET_KERNEL_USE)/dtbs/*.dtb)
 
 $(PRODUCT_OUT)/kernel: $(IMAGE_GZ) $(DTB)
 	cat $(IMAGE_GZ) $(DTB) > $@
