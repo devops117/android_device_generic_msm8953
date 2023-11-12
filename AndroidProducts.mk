@@ -10,11 +10,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    axolotl:$(LOCAL_DIR)/axolotl/axolotl.mk \
-    beryllium:$(LOCAL_DIR)/beryllium/beryllium.mk \
-    enchilada:$(LOCAL_DIR)/enchilada/enchilada.mk
+    mido:$(LOCAL_DIR)/mido/mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    axolotl-userdebug \
-    beryllium-userdebug \
-    enchilada-userdebug
+    mido-userdebug
